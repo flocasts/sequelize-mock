@@ -1,5 +1,10 @@
 # Changelog
 
+v0.11.0 - c160a4fa - Aug 13th 2019
+  * Add support for `Model.count()`
+  * BREAKING Dropped support for Node <= 8
+  * BREAKING Updated all dependencies
+
 v0.10.2 - 8ed75d2 - Dec 4th 2017
   * Fix for DataTypes not being exposed during `sequelize.import` calls
   * *DEV* Added .editorconfig file to normalize editors and minimize whitespace changes

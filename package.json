@@ -1,5 +1,5 @@
 {
-  "name": "sequelize-mock",
+  "name": "@gusta/sequelize-mock",
   "version": "0.11.0",
   "description": "A simple mock interface specifically for testing code relying on Sequelize models",
   "main": "src/index.js",

@@ -642,6 +642,32 @@ fakeModel.prototype.update = function(values, options) {
 	});
 };
 
+/**
+ * Executes a mock query and returns the count of the result set.
+ *
+ * @param {Object} [options] Options to use for the count
+ * @return {Promise<number>} Promise with an integer number of rows
+ */
+fakeModel.prototype.count = function(options) {
+	var self = this;
+
+	return this.$query({
+		query: 'findAll',
+		queryOptions: arguments,
+		options: options,
+		includeAffectedRows: true,
+		fallbackFn: !this.options.autoQueryFallback
+			? null
+			: function() {
+					return Promise.resolve([
+						self.build(options ? options.where : {})
+					]).then(function(result) {
+						return Promise.resolve(Array.isArray(result) ? result.length : 0);
+					});
+			  }
+	});
+};
+
 // Noops
 fakeModel.prototype.addHook = fakeModel.prototype.removeHook = function() {};
 

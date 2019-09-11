@@ -1,5 +1,5 @@
 {
-  "name": "@gusta/sequelize-mock",
+  "name": "@mixnjuice/sequelize-mock",
   "version": "0.11.0",
   "description": "A simple mock interface specifically for testing code relying on Sequelize models",
   "main": "src/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlinkUX/sequelize-mock.git"
+    "url": "git+https://github.com/mixnjuice/sequelize-mock.git"
   },
   "keywords": [
     "sequelize",
@@ -24,9 +24,9 @@
   "author": "Blink UX",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlinkUX/sequelize-mock/issues"
+    "url": "https://github.com/mixnjuice/sequelize-mock/issues"
   },
-  "homepage": "https://github.com/BlinkUX/sequelize-mock#readme",
+  "homepage": "https://github.com/mixnjuice/sequelize-mock#readme",
   "dependencies": {
     "bluebird": "^3.5.5",
     "inflection": "^1.12.0",

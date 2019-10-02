@@ -1,5 +1,5 @@
 {
-  "name": "@mixnjuice/sequelize-mock",
+  "name": "sequelize-mock",
   "version": "0.11.1",
   "description": "A simple mock interface specifically for testing code relying on Sequelize models",
   "main": "src/index.js",
